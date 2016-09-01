@@ -1,0 +1,230 @@
+/*-----------------------------layout----------------------------------*/
+/* -------------------------
+            全域
+---------------------------*/
+body{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/*嵌入字型*/
+@font-face{
+	font-family:"Raleway";
+	src:url(Raleway-ExtraLight.ttf);
+}
+
+h1,h2,h3,h4,span,p{
+	font-family:"Raleway", arial, sans-serif;
+	font-weight:200;
+	margin: 0;
+}
+ul{
+	font-family:"Raleway", arial, sans-serif;
+	font-weight:200;
+	margin:0;
+	padding:0; 
+}
+li{
+	font-family:"Raleway", arial, sans-serif;
+	font-weight:200;
+}
+a{
+	font-family:"Raleway", arial, sans-serif;
+	font-weight:300;
+	text-decoration: none;
+	color:#0066ff;
+}
+img{
+	max-width: 100%;
+}
+/*置中*/
+header .menu,main,footer{
+	width:960px;
+	margin:0 auto;
+	position: relative;
+}
+/*移動特效*/
+a,p,img{
+	transition: all 0.3s ease 0s;
+	-webkit-transition:all 0.3s ease 0s;
+	-moz-transition:all 0.3s ease 0s;
+	-o-transition:all 0.3s ease 0s;
+}
+/*主內容向下移*/
+main{
+	padding-top:100px;
+}
+
+/* -------------------------
+         頁首和頁尾
+---------------------------*/
+header{
+	background:rgba(255,255,255,0.95);
+	position:fixed;
+	z-index:999;
+	width:100%;/*保持置中*/
+}
+header .menu{
+	padding:20px 0;
+}
+header .name h1{
+	line-height: 28px;
+	margin-bottom:0;
+}
+header .name h1 a{
+	font-size:24px; 
+	color:#333;
+	text-transform:uppercase;
+	letter-spacing:2px; 
+	font-family:Arial,"Microsoft JhengHei"; 
+	font-weight:600; 
+}
+header .name h1 a:hover{
+	color:#f80;
+}
+header nav{
+	float:right;
+}
+header nav a{
+	font-size:14px; 
+	color:#666;
+	text-transform:uppercase;
+	letter-spacing:1px;  
+	padding:5px 0 5px 20px;
+	line-height:30px; 
+}
+header nav a:hover{
+	color:#bbb;
+}
+
+/* -------------------------
+           標題
+---------------------------*/
+.pagetitle{
+	padding:20px 0 50px 0;
+}
+.pagetitle .title{
+	font-size:56px; 
+	color:#000;
+	line-height:58px;
+	margin-bottom:20px;
+}
+.pagetitle .subtitle{
+	font-size:24px;
+	color:rgba(0,0,0,0.5);
+	line-height:38px;
+	margin-bottom: 20px; 
+}
+
+/* -------------------------
+           作品集
+---------------------------*/
+.content .tab{
+	display:block; 
+	height:40px;
+	margin-bottom:20px;
+}
+.content .tab li{
+	list-style-type:none; 
+	float:left;
+	margin:5px 5px 0 0;
+}
+
+.content .tab li a,.content .tab li a:visited{
+	padding:9px 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size:14px;
+	color:#999;
+	border:1px solid transparent; 
+}
+.content .tab li a:active,.content .tab li a:hover{
+	border-color:#dcdcdc;
+}
+
+.pic{
+	overflow: hidden;
+}
+.pic .images{
+	position: relative;
+	width:50%;
+	overflow: hidden;
+}
+.pic .odd{
+	float: left;
+}
+.pic .even{
+	display:inline-block; 
+}
+.pic img{
+	width:100%;
+}
+
+/*hover img effect*/
+.pic .images a{
+	display: block;
+	width:100%;
+	height:100%;
+	background:#222;
+}
+.pic .images a img,.pic .images a .overlay{
+	transition: all 0.45s ease-in-out;
+	-webkit-transition: all 0.45s ease-in-out;
+	-moz-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;
+	-ms-transition: all 0.45s ease-in-out;
+}
+.pic .images a:hover .overlay{
+	opacity: 0.5;
+}
+.pic .images a:hover img{
+	transform:scale(1.2) rotate(5deg);
+	-webkit-transform:scale(1.2) rotate(5deg); 
+	-moz-transform:scale(1.2) rotate(5deg); 
+	-o-transform:scale(1.2) rotate(5deg); 
+	-ms-transform:scale(1.2) rotate(5deg); 
+	filter:gray;
+	filter:grayscale(100%) opacity(0.5);
+	-webkit-filter:grayscale(100%) opacity(0.5);
+	-moz-filter:grayscale(100%) opacity(0.5);
+	-o-filter:grayscale(100%) opacity(0.5);
+	-ms-filter:grayscale(100%) opacity(0.5);
+}
+.pic .images a .overlay{
+	position: absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	text-align: center;
+	background:#333;
+	opacity: 0; 
+}
+.pic .images a .title{
+	position: absolute;
+	width:100%;
+	text-align: center;
+	display:none; 
+}
+.pic .images a .title h2{
+	display: table-cell;
+	vertical-align:middle;
+	padding:0 50px;
+	height:100%;
+	color:#fff;
+	margin:0; 
+	font-size:32px;
+}
+/*hover text display*/
+.pic .images a:hover .title{
+	display:table; 
+	top:50%;
+	left:0;
+}
+
+
+
+
+
+
+
+
