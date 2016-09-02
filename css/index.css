@@ -38,7 +38,7 @@ img{
 	max-width: 100%;
 }
 /*置中*/
-header .menu,main,footer{
+header .menu,main,.footer-content{
 	width:960px;
 	margin:0 auto;
 	position: relative;
@@ -97,6 +97,15 @@ header nav a:hover{
 	color:#bbb;
 }
 
+footer{
+	background:#222;
+	padding:20px 0;
+}
+footer span{
+	color:#fff;
+	font-size:18px; 
+}
+
 /* -------------------------
            標題
 ---------------------------*/
@@ -144,6 +153,7 @@ header nav a:hover{
 
 .pic{
 	overflow: hidden;
+	margin-bottom:80px; 
 }
 .pic .images{
 	position: relative;
@@ -208,7 +218,7 @@ header nav a:hover{
 .pic .images a .title h2{
 	display: table-cell;
 	vertical-align:middle;
-	padding:0 50px;
+	padding:0 40px;
 	height:100%;
 	color:#fff;
 	margin:0; 
@@ -221,10 +231,27 @@ header nav a:hover{
 	left:0;
 }
 
+/* -------------------------
+          簡短介紹
+---------------------------*/
+.brief-intro{
+	padding:20px 0;
+	width:700px;
+	border-top:1px solid #999;
+	/*margin:20px 0;*/
+}
+.brief-intro span{
+	font-size:18px;
+	color:rgba(0,0,0,0.5); 
+	line-height:28px; 
+}
 
-
-
-
+/* -------------------------
+          底部照片
+---------------------------*/
+.bottom-bg{
+	margin-top:60px;
+}
 
 
 
