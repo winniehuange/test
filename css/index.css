@@ -96,7 +96,30 @@ header nav a{
 header nav a:hover{
 	color:#bbb;
 }
-
+/*gotop button*/
+.top{
+	position:absolute; 
+	right:20px;
+	top:50%;
+	margin-top:-12px;
+}
+.top span{
+	font-size:10px;
+	color:#999;
+	line-height:10px;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	display:block;
+	position:relative;
+	padding: 6px 7px;
+	margin-bottom:0;     
+}
+.top a{
+	display:block; 
+}
+.top a:hover{
+	border:1px solid #cfcfcf;
+}
 footer{
 	background:#222;
 	padding:20px 0;
@@ -119,16 +142,18 @@ footer span{
 	color:#000;
 	line-height:58px;
 	margin-bottom:20px;
+	width:760px;
 }
 .pagetitle .subtitle{
 	font-size:24px;
 	color:rgba(0,0,0,0.5);
 	line-height:38px;
 	margin-bottom: 20px; 
+	width:760px;
 }
 
 /* -------------------------
-         首頁-作品集
+            作品集
 ---------------------------*/
 .content .tab{
 	display:block; 
@@ -234,7 +259,7 @@ footer span{
 }
 
 /* -------------------------
-         首頁-簡短介紹
+        作品集-簡短介紹
 ---------------------------*/
 .brief-intro{
 	padding:20px 0;
@@ -249,7 +274,7 @@ footer span{
 }
 
 /* -------------------------
-         首頁-底部照片
+        作品集-底部照片
 ---------------------------*/
 .bottom-bg{
 	margin-top:60px;
@@ -315,7 +340,6 @@ footer span{
 	margin:10px 0;
 }
 
-
 /* -------------------------
       關於我-社群網站按鈕
 ---------------------------*/
@@ -376,8 +400,8 @@ main.about .content{
 .full-bg-img{
 	display:block;
 	position: relative; 
-	padding:0 99999px;
-	margin:0 -999999px;
+	/*padding:0 99999px;
+	margin:0 -99999px;*/
 	background-image:url('../images/backgroundpic.jpg'); 
 	background-color:#222;
 	background-attachment:fixed;
@@ -386,7 +410,7 @@ main.about .content{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 	background-position:center;  
-	padding-bottom: 60%;
+	padding-bottom: 30%;
 }
 .aboutme-mid-content{
 	padding:20px 0;
@@ -410,6 +434,8 @@ main.about .content{
 	background:#333; 
 }
 p.btn-donwload{
+	margin:0 auto;
+	width:960px;
 	padding:10px 0 40px 0;
 }
 p.btn-donwload a{
@@ -419,8 +445,19 @@ p.btn-donwload a{
 /* -------------------------
           履歷-內容
 ---------------------------*/
+main.resume{
+	width:100%;
+}
+main.resume .pagetitle{
+	margin:0 auto;
+	width:960px;
+}
 .resume-mid-content{
 	padding:40px 0;
+}
+.resume-block{
+	margin:0 auto;
+	width:960px;
 }
 .column-first{
 	float:left;
@@ -458,4 +495,54 @@ p.btn-donwload a{
 .resume-mid-content ul li{
 	margin-left:20px; 
 }
+
+/*-----------------------------Mobile layout------------------------------*/
+@media only screen and (max-width:959px) and (min-width:768px){
+/* -------------------------
+            全域
+---------------------------*/
+header .menu,main,.footer-content{
+	width:768px;
+}
+/* -------------------------
+        作品集內頁-標題
+---------------------------*/
+.portfolio-inner .title,.portfolio-inner .subtitle{
+	width:580px;
+}
+/* -------------------------
+          關於-內容
+---------------------------*/
+main.about{
+	margin:0;
+}
+main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+	width:768px;
+}
+.full-bg-img{
+	padding-bottom:50%;
+}
+/* -------------------------
+          履歷-內容
+---------------------------*/
+main.resume{
+	margin:0;
+}
+main.resume .pagetitle,.resume-block,p.btn-donwload{
+	width:768px;
+}
+
+
+
+}
+
+@media only screen and (max-width:767px) and (min-width:420px){{
+
+
+
+
+
+}
+
+
 
