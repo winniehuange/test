@@ -13,7 +13,7 @@ body{
 	src:url(Raleway-ExtraLight.ttf);
 }
 
-h1,h2,h3,h4,span,p{
+h1,h2,h3,h4,h5,span,p{
 	font-family:"Raleway", arial, sans-serif;
 	font-weight:200;
 	margin: 0;
@@ -100,6 +100,7 @@ header nav a:hover{
 footer{
 	background:#222;
 	padding:20px 0;
+	clear:both; 
 }
 footer span{
 	color:#fff;
@@ -418,4 +419,43 @@ p.btn-donwload a{
 /* -------------------------
           履歷-內容
 ---------------------------*/
+.resume-mid-content{
+	padding:40px 0;
+}
+.column-first{
+	float:left;
+	width:74%;
+	margin-right:4%; 
+}
+.column-second{
+	float:left; 
+	width:20%; 
+}
+.resume-mid-content h5{
+	font-family:Arial,"Microsoft JhengHei"; 
+	font-weight:600; 
+	font-size: 18px;
+	text-transform:uppercase;
+	letter-spacing:1.5px; 
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.resume-mid-content span{
+	font-family:Arial,"Microsoft JhengHei"; 
+	font-weight:600; 
+	font-size:14px;
+	color:#f80;
+	text-transform:uppercase;
+	letter-spacing:1.5px; 
+	line-height: 30px;
+	margin-bottom: 20px;
+	display:block; 
+}
+.resume-mid-content ul{
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.resume-mid-content ul li{
+	margin-left:20px; 
+}
 
