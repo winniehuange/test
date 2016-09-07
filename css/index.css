@@ -96,12 +96,33 @@ header nav a{
 header nav a:hover{
 	color:#bbb;
 }
+/*mobile menu*/
+header .mobile-toggle{
+	position:absolute;
+	right:0;
+	top:22px;
+	cursor:pointer;
+	font-size:20px;
+	width:30px;    
+	display:none;
+}
+header .mobile-toggle span{
+	width:30px;
+	height:2px;
+	margin-bottom:8px;
+	/*border-radius:1000px;*/
+	background:#8f8f8f;
+	display:block;   
+}
+
+
+
 /*gotop button*/
 .top{
-	position:absolute; 
+	position:fixed; 
 	right:20px;
-	top:50%;
-	margin-top:-12px;
+	bottom:20px;
+	z-index:9999; 
 }
 .top span{
 	font-size:10px;
@@ -116,6 +137,8 @@ header nav a:hover{
 }
 .top a{
 	display:block; 
+	border:1px solid transparent;
+	background:#fff; 
 }
 .top a:hover{
 	border:1px solid #cfcfcf;
@@ -146,7 +169,7 @@ footer span{
 }
 .pagetitle .subtitle{
 	font-size:24px;
-	color:rgba(0,0,0,0.5);
+	color:#666;
 	line-height:38px;
 	margin-bottom: 20px; 
 	width:760px;
@@ -498,48 +521,215 @@ main.resume .pagetitle{
 
 /*-----------------------------Mobile layout------------------------------*/
 @media only screen and (max-width:959px) and (min-width:768px){
-/* -------------------------
-            全域
----------------------------*/
-header .menu,main,.footer-content{
-	width:768px;
-}
-/* -------------------------
-        作品集內頁-標題
----------------------------*/
-.portfolio-inner .title,.portfolio-inner .subtitle{
-	width:580px;
-}
-/* -------------------------
-          關於-內容
----------------------------*/
-main.about{
-	margin:0;
-}
-main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
-	width:768px;
-}
-.full-bg-img{
-	padding-bottom:50%;
-}
-/* -------------------------
-          履歷-內容
----------------------------*/
-main.resume{
-	margin:0;
-}
-main.resume .pagetitle,.resume-block,p.btn-donwload{
-	width:768px;
-}
+	/* -------------------------
+            	全域
+	---------------------------*/
+	header .menu,main,.footer-content{
+		width:768px;
+	}
+	/* -------------------------
+        	作品集內頁-標題
+	---------------------------*/
+	.portfolio-inner .title,.portfolio-inner .subtitle{
+		width:580px;
+	}
+	/* -------------------------
+          	關於-內容
+	---------------------------*/
+	main.about{
+		margin:0;
+	}
+	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+		width:768px;
+	}
+	.full-bg-img{
+		padding-bottom:50%;
+	}
+	/* -------------------------
+          	履歷-內容
+	---------------------------*/
+	main.resume{
+		margin:0;
+	}
+	main.resume .pagetitle,.resume-block,p.btn-donwload{
+		width:768px;
+	}
 
 
 
 }
 
-@media only screen and (max-width:767px) and (min-width:420px){{
+@media only screen and (max-width:767px) and (min-width:480px){
+	/* -------------------------
+            	全域
+	---------------------------*/
+	header .menu,main,.footer-content{
+		width:420px;
+
+	}	
+	/* -------------------------
+            	作品集
+	---------------------------*/
+	.brief-intro{
+		width:420px;
+	}
+	/* -------------------------
+          	關於-內容
+	---------------------------*/
+	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+		width:420px;
+	}
+	/* -------------------------
+          	履歷-內容
+	---------------------------*/
+	main.resume .pagetitle,.resume-block,p.btn-donwload{
+		width:420px;
+	}
 
 
 
+}
+
+
+@media only screen and (max-width:766px){
+	main{
+		padding-top:0; 
+	}
+	/* -------------------------
+         	mobile選單
+	---------------------------*/
+	/*open mobile menu*/
+	header.open-menu{
+		height:250px !important;
+		position:static; 
+	}
+	header.open-menu .mobile-toggle{
+		transform:rotate(-90deg);
+	    -webkit-transform:rotate(-90deg);
+	}
+	/*mobile menu*/
+	header .mobile-toggle{
+		display: block;
+	}
+	header nav{
+		float:none;
+		position:absolute;
+		top:65px;
+		width:420px;  
+	}
+	header nav a{
+		display: block;
+		border-bottom:1px dotted #dcdcdc;
+		background:url('../images/menu-arrow.png') 95% 48% no-repeat;
+		padding:5px 5px 5px 20px; 
+	}
+	header nav a:hover{
+		background:url('../images/menu-arrow.png') 95% 48% no-repeat #eee;
+	}
+	/* -------------------------
+           	標題
+	---------------------------*/
+	.pagetitle .title{
+		font-size:36px;
+		width:80%;
+	}
+	.pagetitle .subtitle{
+		font-size:16px;
+		width:auto;
+	}
+	/* -------------------------
+            	作品集
+	---------------------------*/
+	.content .tab{
+		height:60px;
+	}
+	.content .tab li{
+		margin:5px 5px 10px 0;
+	}
+	.pic .odd{
+		float:none; 
+	}
+	.pic .images{
+		width:100%;
+	}
+	.pic .images a .title h2{
+		font-size:22px; 
+	}
+	/* -------------------------
+     	作品集內頁-頁面切換按鈕
+	---------------------------*/
+	.btn-control{
+		right:0;
+	}
+	.btn-control span a{
+		width:20px;
+		height:20px;
+	}
+	.pre a{
+		background-position:-10px -11px; 
+	}
+	.next a{
+		background-position:-10px -65px; 
+	}
+	.close{
+		display:none; 
+	}
+	/* -------------------------
+          	關於-內容
+	---------------------------*/
+	.full-bg-img{
+		padding-bottom:60%;
+		background-attachment:initial;
+	}
+	/* -------------------------
+          	履歷-內容
+	---------------------------*/
+	.resume-mid-content{
+		width:100%;
+	}
+	.column-first{
+		padding-bottom:10px;
+	}
+	.column-second{
+		padding-top:0;
+	}
+
+
+}
+
+
+@media only screen and (max-width:479px){
+	/* -------------------------
+            	全域
+	---------------------------*/
+	header .menu,main,.footer-content{
+		width:300px;
+
+	}
+	/* -------------------------
+         	mobile選單
+	---------------------------*/
+	header nav{
+		width:300px;
+	}
+	/* -------------------------
+            	作品集
+	---------------------------*/
+	.brief-intro{
+		width:300px;
+	}
+	/* -------------------------
+          	關於-內容
+	---------------------------*/
+	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
+		width:300px;
+	}
+	/* -------------------------
+          	履歷-內容
+	---------------------------*/
+	main.resume .pagetitle,.resume-block,p.btn-donwload{
+		width:300px;
+	}
 
 
 }
