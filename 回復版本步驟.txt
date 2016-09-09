@@ -1,0 +1,5 @@
+【回復前版本】
+
+第一步：先按revert commit 
+第二步：按checkout
+成功：就會看到HEAD標籤跑出來

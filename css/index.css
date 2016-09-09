@@ -85,6 +85,15 @@ header .name h1 a:hover{
 header nav{
 	float:right;
 }
+header nav ul{
+	list-style-type:none; 
+}
+
+header nav ul li{
+	float:left;
+}
+
+
 header nav a{
 	font-size:14px; 
 	color:#666;
@@ -292,7 +301,7 @@ footer span{
 }
 .brief-intro span{
 	font-size:18px;
-	color:rgba(0,0,0,0.5); 
+	color:#999; 
 	line-height:28px; 
 }
 
@@ -616,6 +625,9 @@ main.resume .pagetitle{
 		position:absolute;
 		top:65px;
 		width:420px;  
+	}
+	header nav ul li{
+		float:none; 
 	}
 	header nav a{
 		display: block;
