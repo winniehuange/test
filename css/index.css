@@ -606,8 +606,19 @@ main.resume .pagetitle{
 
 @media only screen and (max-width:766px){
 	main{
-		padding-top:0; 
+		/*padding-top:0; */
 	}
+
+	/* -------------------------
+             頁首及頁尾
+	---------------------------*/
+	/*20160909-add*/
+	header .name h1{
+		position:absolute;
+		top:26px;
+		left:10px;
+	}
+
 	/* -------------------------
          	mobile選單
 	---------------------------*/
