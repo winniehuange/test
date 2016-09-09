@@ -1,74 +1,73 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-	<title>ShaRead App | Winnie Huang</title>
-	<link rel="shortcut icon" href="images/hami-icon.png">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>ShaRead App | Winnie Huang</title>
+    <!-- <link rel="shortcut icon" href="images/hami-icon.png"> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+  </head>
+  <body>
+    <header class="open-menu">
+      <div class="menu">
+        <nav>
+          <ul id="menu-list">
+            <li><a href="index.html">ShaRead</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </nav>
+        <div class="name" id="logo">
+          <h1><a href="#">Winnie Huang</a></h1>
+        </div>
+      </div>
+    </header>
+    <div class="top">
+      <a href="#">
+        <span class="scrolltop">▲ Top</span>
+      </a>
+    </div>
+    <main class="portfolio-inner">
+    <div class="pagetitle">
+      <h2 class="title">ShaRead App</h2>
+      <h3 class="subtitle">I am the founder of this project and focus on the user behavior research, UI/UX design and project planning.</h3>
+      <div class="btn-control">
+        <span class="close"><a href="#">Back to Portfolio</a></span>
+        <span class="next"><a href="#">Next Post</a></span>
+        <span class="pre"><a href="#">Previous Post</a></span>
+      </div>
+    </div>
+    <div class="content">
+      <p class="content-title">[Project Brief]</p>
+      <p>I want to create a platform which can let people who like reading and enjoy sharing share their bookshelf at home, and through platform to open bookstore so that people can rent books to someone who want to read books.</br>Because of using mutually beneficial way to share books, one get money, another get books content, comment and some personal view, I prefer to rent book model.</br> 
+      Therefore, I begain to design this product, and name it「ShaRead」.</p>
+      <p class="content-title">[Wireframe]</p>
+      <img src="images/portfolio01/portfolio_content_pic01.jpg">
+      <p class="content-title">[Mockup]</p>
+      <img src="images/portfolio01/portfolio_content_pic02.jpg">
+      <img src="images/portfolio01/portfolio_content_pic03.jpg">
+      <img src="images/portfolio01/portfolio_content_pic04.jpg">
+      <p class="content-title">[Prototyping]</p>
+    </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <span>Contact me. </span>
+      </div>
+    </footer>
+    <script>
+      $(function(){
+        $('#menu-list').slicknav({
+          label: '',
+          appendTo: '#logo',
+        });
+      });
+    </script>
 
-</head>
-<body>
- 	<header class="open-menu">
- 		<div class="menu">
- 			<div class="mobile-toggle">
- 				<span></span>
- 				<span></span>
- 				<span></span>
- 			</div>
- 			<nav>
- 				<ul>
- 					<li><a href="index.html">ShaRead</a></li>
- 					<li><a href="portfolio.html">Portfolio</a></li>
- 					<li><a href="about.html">About</a></li>
- 					<li><a href="resume.html">Resume</a></li>
- 				</ul>
- 			</nav>
- 			<div class="name" id="logo">
- 				<h1><a href="#">Winnie Huang</a></h1>
- 			</div>
- 		</div>
- 	</header>
- 	<div class="top">
- 		<a href="#">
- 			<span class="scrolltop">▲ Top</span>
- 		</a>
- 	</div>
- 	<main class="portfolio-inner">
- 		<div class="pagetitle">
- 			<h2 class="title">ShaRead App</h2>
- 			<h3 class="subtitle">I am the founder of this project and focus on the user behavior research, UI/UX design and project planning.</h3>
- 			<div class="btn-control">
- 				<span class="close"><a href="#">Back to Portfolio</a></span>
- 				<span class="next"><a href="#">Next Post</a></span>
- 				<span class="pre"><a href="#">Previous Post</a></span>
- 			</div>
- 		</div>
- 		<div class="content">
- 			<p class="content-title">[Project Brief]</p>
- 	 		<p>I want to create a platform which can let people who like reading and enjoy sharing share their bookshelf at home, and through platform to open bookstore so that people can rent books to someone who want to read books.</br>Because of using mutually beneficial way to share books, one get money, another get books content, comment and some personal view, I prefer to rent book model.</br> 
- 	 		Therefore, I begain to design this product, and name it「ShaRead」.</p>
- 	 		<p class="content-title">[Wireframe]</p>
- 	 		<img src="images/portfolio01/portfolio_content_pic01.jpg">
- 	 		<p class="content-title">[Mockup]</p>
- 	 		<img src="images/portfolio01/portfolio_content_pic02.jpg">
- 	 		<img src="images/portfolio01/portfolio_content_pic03.jpg">
- 	 		<img src="images/portfolio01/portfolio_content_pic04.jpg">
- 	 		<p class="content-title">[Prototyping]</p>
- 		</div>
- 	</main>
- 	<footer>
- 		<div class="footer-content">
- 			<span>Contact me. </span>
- 		</div>
- 	</footer>
-
-
-</body>
+  </body>
 </html> 
-
-
-
-
-

@@ -528,6 +528,10 @@ main.resume .pagetitle{
 	margin-left:20px; 
 }
 
+.slicknav_menu {
+	display:none;
+}
+
 /*-----------------------------Mobile layout------------------------------*/
 @media only screen and (max-width:959px) and (min-width:768px){
 	/* -------------------------
@@ -608,10 +612,10 @@ main.resume .pagetitle{
          	mobile選單
 	---------------------------*/
 	/*open mobile menu*/
-	header.open-menu{
-		height:250px !important;
-		position:static; 
-	}
+/*  header.open-menu{*/
+/*    height:250px !important;*/
+/*    position:static; */
+/*  }*/
 	header.open-menu .mobile-toggle{
 		transform:rotate(-90deg);
 	    -webkit-transform:rotate(-90deg);
@@ -746,5 +750,13 @@ main.resume .pagetitle{
 
 }
 
-
-
+@media screen and (max-width: 766px) {
+	/* #menu is the original menu */
+	#menu-list {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+}
