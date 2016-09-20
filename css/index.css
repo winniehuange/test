@@ -123,35 +123,6 @@ header .mobile-toggle span{
 	background:#8f8f8f;
 	display:block;   
 }
-
-
-
-/*gotop button*/
-.top{
-	position:fixed; 
-	right:20px;
-	bottom:20px;
-	z-index:9999; 
-}
-.top span{
-	font-size:10px;
-	color:#999;
-	line-height:10px;
-	letter-spacing:2px;
-	text-transform: uppercase;
-	display:block;
-	position:relative;
-	padding: 6px 7px;
-	margin-bottom:0;     
-}
-.top a{
-	display:block; 
-	border:1px solid transparent;
-	background:#fff; 
-}
-.top a:hover{
-	border:1px solid #cfcfcf;
-}
 footer{
 	background:#222;
 	padding:20px 0;
@@ -161,6 +132,29 @@ footer span{
 	color:#fff;
 	font-size:18px; 
 }
+
+
+/*gotop button*/
+a.back-to-top{
+	display:none;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px; 
+	font-size:12px;
+	color:#999; 
+	line-height:10px;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	border:1px solid transparent;
+	background:#fff; 
+	padding: 6px 7px;
+	margin-bottom:0; 
+}
+a:hover.back-to-top {
+	border:1px solid #cfcfcf;
+}
+
 
 /* -------------------------
            標題
