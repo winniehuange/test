@@ -9,7 +9,9 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" href="css/slicknav.css" />
   <script src="js/jquery.min.js"></script>
+  
   <script src="js/jquery.slicknav.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 </head>
 <body>
  	<header class="open-menu">
@@ -35,19 +37,19 @@
  			<h2 class="title">Portfolio</h2>
  			<h3 class="subtitle">UI/UX, Web and Visual Designer</h3>
  		</div>
- 		<div class="content">
- 	 		<div class="tab">
- 	 			<ul class="category">
- 	 				<li><a href="#">All</a></li>
- 	 				<li><a href="#">UI/UX</a></li>
- 	 				<li><a href="#">Web</a></li>
- 	 				<li><a href="#">Visual</a></li>
- 	 				<li><a href="#">LOGO</a></li>
- 	 				<li><a href="#">ICON</a></li>
+ 		<div class="content">			
+  	 		<div class="tab">
+ 	 			<ul class="category" data-option-key="filter">
+ 	 				<li><a href="#filter" data-option-value="*">All</a></li>
+ 	 				<li><a href="#filter" data-option-value=".uiux">UI/UX</a></li>
+ 	 				<li><a href="#filter" data-option-value=".web">Web</a></li>
+ 	 				<li><a href="#filter" data-option-value=".visual">Visual</a></li>
+ 	 				<li><a href="#filter" data-option-value=".logo">LOGO</a></li>
+ 	 				<li><a href="#filter" data-option-value=".icon">ICON</a></li>
  	 			</ul>
- 	 		</div>
+ 	 		</div> 
  	 		<div class="pic">
- 	 			<div class="images odd seventh">
+ 	 			<div class="images odd seventh element-item uiux">
  	 				<a href="portfolio07_inner.html">
  	 					<img src="images/portfolio07.jpg">
  	 					<div class="overlay"></div>
@@ -55,9 +57,8 @@
  	 						<h2>eGay UI/UX</h2>
  	 					</div>
  	 				</a>
- 	 				
  	 			</div>
- 	 			<div class="images even fifth">
+ 	 			<div class="images even fifth element-item uiux">
  	 				<a href="portfolio05_inner.html">
  	 					<img src="images/portfolio05.jpg">
  	 					<div class="overlay"></div>
@@ -66,7 +67,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images odd fourth">
+ 	 			<div class="images odd fourth element-item web">
  	 				<a href="portfolio04_inner.html">
  	 					<img src="images/portfolio04.jpg">
  	 					<div class="overlay"></div>
@@ -75,7 +76,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images even third">
+ 	 			<div class="images even third element-item visual">
  	 				<a href="portfolio03_inner.html">
  	 					<img src="images/portfolio03.jpg">
  	 					<div class="overlay"></div>
@@ -84,7 +85,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images odd second">
+ 	 			<div class="images odd second element-item logo">
  	 				<a href="portfolio02_inner.html">
  	 					<img src="images/portfolio02.jpg">
  	 					<div class="overlay"></div>
@@ -93,7 +94,7 @@
  	 					</div>
  	 				</a>
  	 			</div>
- 	 			<div class="images even first">
+ 	 			<div class="images even first element-item icon">
  	 				<a href="portfolio01_inner.html">
  	 					<img src="images/portfolio01.jpg">
  	 					<div class="overlay"></div>
@@ -125,7 +126,30 @@
       });
     });
   </script>
-
+  <script>
+  	// Isotope dynamic filter tab 
+    $(function(){
+      var $container = $('.pic');
+      $container.isotope({
+        itemSelector : '.element-item'
+      });
+      var $optionSets = $('.category'),
+          $optionLinks = $optionSets.find('a');
+      $optionLinks.click(function(){
+        var $this = $(this);
+        var $optionSet = $this.parents('.category');
+        // make option object dynamically, i.e. { filter: '.my-filter-class' }
+        var options = {},
+            key = $optionSet.attr('data-option-key'),
+            value = $this.attr('data-option-value');
+        // parse 'false' as false boolean
+        value = value === 'false' ? false : value;
+        options[ key ] = value;
+        $container.isotope( options );
+        return false;
+      });
+    });
+  </script>
   <script type="text/javascript">
 	// create the back to top button
 	$('body').prepend('<a href="#" class="back-to-top">▲ Top</a>');
