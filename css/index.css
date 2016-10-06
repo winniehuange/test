@@ -365,6 +365,10 @@ a:hover.back-to-top {
 .portfolio-inner img{
 	margin:10px 0;
 }
+.portfolio-inner .video{
+	text-align:center; 
+	margin:10px 0;
+}
 
 /* -------------------------
       關於我-社群網站按鈕
@@ -428,7 +432,6 @@ main.about .content{
 	position: relative; 
 	/*padding:0 99999px;
 	margin:0 -99999px;*/
-	background-image:url('../images/backgroundpic.jpg'); 
 	background-color:#222;
 	background-attachment:fixed;
 	background-size: cover !important;
@@ -436,7 +439,11 @@ main.about .content{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 	background-position:center;  
-	padding-bottom: 30%;
+	padding-bottom: 40%;
+}
+/*2016-10-06-新增背景class*/
+.about-bg{
+	background-image:url('../images/about-bg.png'); 
 }
 .aboutme-mid-content{
 	padding:20px 0;
@@ -466,6 +473,10 @@ p.btn-donwload{
 }
 p.btn-donwload a{
 	color:#f80; 
+}
+/*2016-10-06-新增背景class*/
+.resume-bg{
+	background-image:url('../images/backgroundpic.jpg'); 
 }
 
 /* -------------------------
@@ -549,8 +560,9 @@ main.resume .pagetitle{
 	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
 		width:768px;
 	}
-	.full-bg-img{
-		padding-bottom:50%;
+	.full-bg-img{/*2016-10-06-修正不滾動*/
+		padding-bottom:60%;
+		background-attachment:initial;
 	}
 	/* -------------------------
           	履歷-內容
