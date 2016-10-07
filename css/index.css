@@ -419,6 +419,8 @@ main.about .content{
 /*第一張圖*/
 .aboutme-pic{
 	margin-bottom:80px;
+	margin:0 auto;/*2016-10-07-add*/
+	width:960px;/*2016-10-07-add*/
 }
 .aboutme-pic img{
 	width:100%;
@@ -476,7 +478,7 @@ p.btn-donwload a{
 }
 /*2016-10-06-新增背景class*/
 .resume-bg{
-	background-image:url('../images/backgroundpic.jpg'); 
+	background-image:url('../images/resume-bg.jpg'); 
 }
 
 /* -------------------------
@@ -609,6 +611,16 @@ main.resume .pagetitle{
 
 }
 
+/*2016-10-07-add*/
+@media only screen and (max-width:959px){
+	/* -------------------------
+          	關於-內容
+	---------------------------*/
+	.aboutme-pic{
+	width:auto;
+	}
+
+}
 
 @media only screen and (max-width:766px){
 	main{
