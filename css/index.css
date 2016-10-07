@@ -33,6 +33,7 @@ a{
 	font-weight:300;
 	text-decoration: none;
 	color:#0066ff;
+	word-break:break-all;/*2016-10-07-add*/ 
 }
 img{
 	max-width: 100%;
