@@ -365,9 +365,14 @@ a:hover.back-to-top {
 .portfolio-inner img{
 	margin:10px 0;
 }
+/*2016-10-07-add*/
 .portfolio-inner .video{
-	text-align:center; 
-	margin:10px 0;
+	text-align:center;
+	margin:30px 0; 
+}
+.portfolio-inner .video iframe{
+	width:560px;
+	height:315px;
 }
 
 /* -------------------------
@@ -595,6 +600,13 @@ main.resume .pagetitle{
 		width:420px;
 	}
 	/* -------------------------
+            作品集內頁-內容
+	---------------------------*/
+	/*2016-10-07-add*/
+	.portfolio-inner .video iframe{
+		width:420px;
+	}
+	/* -------------------------
           	關於-內容
 	---------------------------*/
 	main.about .pagetitle,main.about .btn-social,main.about .aboutme-mid-content{
@@ -672,7 +684,7 @@ main.resume .pagetitle{
 		background:url('../images/menu-arrow.png') 95% 48% no-repeat #eee;
 	}
 	/* -------------------------
-           	標題
+           	    標題
 	---------------------------*/
 	.pagetitle .title{
 		font-size:36px;
@@ -762,6 +774,14 @@ main.resume .pagetitle{
 	---------------------------*/
 	.brief-intro{
 		width:300px;
+	}
+	/* -------------------------
+            作品集內頁-內容
+	---------------------------*/
+	/*2016-10-07-add*/
+	.portfolio-inner .video iframe{
+		width:300px;
+		height:250px;
 	}
 	/* -------------------------
           	關於-內容
