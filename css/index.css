@@ -401,6 +401,9 @@ a:hover.back-to-top {
 .social-icon.facebook{
 	background-image: url('../images/fb-logo.png');
 }
+.social-icon.behance{
+	background-image: url('../images/behance-logo.png');
+}
 /*hover effect*/
 a.social-icon{
 	opacity:0.75; 
