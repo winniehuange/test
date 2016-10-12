@@ -284,6 +284,15 @@ a:hover.back-to-top {
 	top:50%;
 	left:0;
 }
+/*最下方pic*/
+.bottom-bg{
+
+}
+.bottom-bg img{
+	width:100%;
+}
+
+
 
 /* -------------------------
         作品集-簡短介紹
